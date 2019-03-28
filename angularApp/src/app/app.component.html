@@ -1,11 +1,23 @@
 <!--<app-menu></app-menu>-->
 <!--<router-outlet></router-outlet>-->
-
-<div align="center">
-    <marquee class="text-info">
-        <h2>
-Welcome to Angular Zero To Hero...</h2>
-    </marquee>
-    <img width="40%" src="https://upload.wikimedia.org/wikipedia/commons/6/67/KU_SubLogo.png">
+<div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                Angular X  Express.JS     </h1> <p class="lead">มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน</p>
+        </div>
+    </div>
 </div>
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <div align="center">
+                <app-menu></app-menu>
+               
+            </div>
+        </div>
+        <div class="col">
+                <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

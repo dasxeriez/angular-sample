@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   constructor() {
   }
+
+  async ngOnInit(){
+    if(localStorage.getItem('user')){
+    }else{
+      localStorage.setItem('user', 'guest')
+      localStorage.setItem('status', 'N')
+    }
+
+    console.log(localStorage);
+  }
   title = 'angularApp';
 }

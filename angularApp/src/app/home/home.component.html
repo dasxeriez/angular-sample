@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header bg-secondary">
+
+        <marquee class="text-white">
+            <h2>
+                Welcome to Angular Zero To Hero...</h2>
+        </marquee>
+    </div>
+    <div align="center">
+        <img width="20%" src="https://upload.wikimedia.org/wikipedia/commons/6/67/KU_SubLogo.png">
+      <div class="container">
+        <form  #myForm="ngForm" (ngSubmit)="create(myForm)">
+          <div class="row">
+            <div class="col-4">
+              <input class="form-control" name="id" placeholder="กรอกรหัสนิสิตเพื่อเริ่มใช้งาน" ngModel ></div>
+            <div class="col-4">
+              <input class="form-control" name="name" placeholder="ระบุชื่อนามสกุล" ngModel ></div>
+            <div class="col-2">
+              <button type="submit" class="btn btn-outline-primary">
+                <i class="fa fa-plus-circle"></i> สร้างโน๊ตของฉัน</button>
+            </div>
+          </div>
+        </form>
+        <br>
+      </div>
+    </div>
+    <div class="card-footer bg-warning">
+        <label class="badge badge-primary">Major Computer Science</label>
+        <label class="badge badge-info">Facculty Of Art Science</label>
+    </div>
+</div>

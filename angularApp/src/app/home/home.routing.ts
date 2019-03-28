@@ -1,11 +1,11 @@
 
-import {ProfileComponent} from "./profile.component";
+import {HomeComponent} from "./home.component";
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: ProfileComponent,
+    component: HomeComponent, 
     data: {
       meta: {
       },
@@ -13,4 +13,5 @@ const routes: Routes = [
   },
 ];
 
-export const ProfileRoutes = RouterModule.forChild(routes);
+export const HomeRoutes = RouterModule.forChild(routes);
+ 

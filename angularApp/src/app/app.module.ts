@@ -5,19 +5,27 @@ import { AppRoutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import {CommonModule} from "@angular/common";
-import { SideBarComponent } from './side-bar/side-bar.component';
 import {HttpClientModule} from "@angular/common/http";
 import {TransferHttpService} from "@gorniv/ngx-transfer-http";
+import { HomeComponent } from './home/home.component';
+import { MemoMasterComponent } from './memo-master/memo-master.component';
+import { MemoDetailComponent } from './memo-detail/memo-detail.component';
+import { MemoSearchComponent } from './memo-search/memo-search.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    SideBarComponent
+    HomeComponent,
+    MemoMasterComponent,
+    MemoDetailComponent,
+    MemoSearchComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
+    FormsModule,
     HttpClientModule,
     AppRoutes
   ],
