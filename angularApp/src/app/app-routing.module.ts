@@ -20,12 +20,7 @@ import {MemoSearchComponent} from "./memo-search/memo-search.component";
 import {MemoMasterComponent} from "./memo-master/memo-master.component";
 import {MemoDetailComponent} from "./memo-detail/memo-detail.component";
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: "home", component: HomeComponent },
-    { path: "master", component: MemoMasterComponent },
-    { path: "detail", component: MemoDetailComponent },
-    { path: "search", component: MemoSearchComponent }
-
+   
 ];
 
 @NgModule({
